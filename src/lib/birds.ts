@@ -77,7 +77,7 @@ export const BIRDS: Record<BirdId, BirdProfile> = {
       { label: '離巢', months: '6–7 月', icon: '🦅' },
     ],
     streams: [
-      { id: 'chongxing-2026', videoId: 'gsCR_X6Dx_U', label: '中興大學 2026' },
+      { id: 'chongxing-2026', videoId: '8CmECCFBWiY', label: '中興大學 2026' },
       { id: 'yilan-2026', videoId: 'q_2234WOCkA', label: '宜蘭大學 2026' },
       { id: 'daan-2026', videoId: 'gsCR_X6Dx_U', label: '大安森林公園 2026' },
     ],

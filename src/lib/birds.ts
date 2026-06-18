@@ -17,7 +17,6 @@ export interface BirdProfile {
   breedingTimeline: { label: string; months: string; icon: string }[]
   streams: { id: string; videoId: string; label: string }[]
   youtubeChannelHandle?: string
-  autoDetectLive?: boolean
 }
 
 export const DEFAULT_BIRD_ID: BirdId = 'goshawk'
@@ -82,7 +81,6 @@ export const BIRDS: Record<BirdId, BirdProfile> = {
       { id: 'daan-2026', videoId: 'gsCR_X6Dx_U', label: '大安森林公園 2026' },
     ],
     youtubeChannelHandle: '@RRGT',
-    autoDetectLive: true,
   },
   nightjar: {
     id: 'nightjar',
@@ -128,7 +126,6 @@ export const BIRDS: Record<BirdId, BirdProfile> = {
       { id: 'nightjar-live-1', videoId: 'LqvI2yZICUs', label: '直播一' },
       { id: 'nightjar-live-2', videoId: 'Po19VWKuFdo', label: '直播二' },
     ],
-    autoDetectLive: false,
   },
 }
 

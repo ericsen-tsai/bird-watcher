@@ -8,7 +8,7 @@
 - 多鳥種切換：鳳頭蒼鷹（RRGT 直播）與南亞夜鷹
 - 可調整大小的分割視窗：直播 + 物種資訊 + 筆記
 - 物種百科：外觀特徵、食性、繁殖時程
-- 筆記功能：自訂日期時間，匯出 Markdown 或 CSV，per-bird localStorage
+- 筆記功能：匯出 Markdown 或 CSV，per-bird localStorage
 - 響應式設計：桌面版分割面板 / 行動版分頁切換
 
 ## 開始使用
@@ -20,25 +20,11 @@ npm run dev
 
 開發伺服器預設在 http://localhost:3000
 
-## 環境變數（選用）
-
-複製 `.env.example` 為 `.env`：
-
-```bash
-cp .env.example .env
-```
-
-| 變數 | 說明 |
-|------|------|
-| `YOUTUBE_API_KEY` | YouTube Data API v3 金鑰，用於自動偵測鳳頭蒼鷹直播 ID |
-| `VITE_YOUTUBE_LIVE_VIDEO_ID` | 手動指定 YouTube 直播影片 ID |
-
-應用程式在不設定任何環境變數的情況下仍可正常運作。
+此應用程式不需要環境變數即可正常運作。
 
 ## 技術架構
 
 - [TanStack Start](https://tanstack.com/start) — 全端 React 框架（SSR + 檔案路由）
-- [TanStack Query](https://tanstack.com/query) — 伺服器狀態管理
 - [Tailwind CSS v4](https://tailwindcss.com/) — 樣式
 - [react-resizable-panels](https://github.com/bvaughn/react-resizable-panels) — 可調整面板
 - [Lucide React](https://lucide.dev/) — 圖示

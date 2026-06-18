@@ -1,0 +1,14 @@
+{
+  "name": "鳥類直播觀察站",
+  "short_name": "鳥類觀察站",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "theme_color": "#1a2e1a",
+  "background_color": "#1a2e1a",
+  "display": "standalone"
+}

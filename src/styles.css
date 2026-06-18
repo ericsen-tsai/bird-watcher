@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --color-forest-950: oklch(0.14 0.02 155);
+  --color-forest-900: oklch(0.18 0.02 155);
+  --color-forest-800: oklch(0.24 0.03 155);
+  --color-forest-700: oklch(0.32 0.04 155);
+  --color-forest-600: oklch(0.42 0.05 155);
+  --color-forest-500: oklch(0.52 0.06 155);
+  --color-forest-400: oklch(0.62 0.05 155);
+  --color-forest-300: oklch(0.74 0.04 155);
+  --color-forest-200: oklch(0.86 0.03 155);
+  --color-forest-100: oklch(0.94 0.01 155);
+  --color-amber-500: oklch(0.75 0.16 75);
+  --color-amber-400: oklch(0.82 0.14 75);
+  --color-amber-300: oklch(0.88 0.10 75);
+  --color-rust-500: oklch(0.58 0.16 40);
+  --color-rust-400: oklch(0.66 0.14 40);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--color-forest-200);
+  font-family: var(--font-sans);
+  background-color: var(--color-forest-950);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Resizable panel handles */
+[data-panel-group-direction="horizontal"] > [data-resize-handle] {
+  width: 6px;
+  background: var(--color-forest-800);
+  transition: background 150ms ease;
+}
+[data-panel-group-direction="horizontal"] > [data-resize-handle]:hover,
+[data-panel-group-direction="horizontal"] > [data-resize-handle][data-resize-handle-active] {
+  background: var(--color-amber-500);
+}
+[data-panel-group-direction="vertical"] > [data-resize-handle] {
+  height: 6px;
+  background: var(--color-forest-800);
+  transition: background 150ms ease;
+}
+[data-panel-group-direction="vertical"] > [data-resize-handle]:hover,
+[data-panel-group-direction="vertical"] > [data-resize-handle][data-resize-handle-active] {
+  background: var(--color-amber-500);
+}
+
+a {
+  color: var(--color-amber-400);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-amber-300);
+  text-decoration: underline;
+}

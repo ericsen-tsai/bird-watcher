@@ -22,14 +22,14 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       {
         name: "description",
         content:
-          "台灣鳥類即時直播觀察平台，支援鳳頭蒼鷹與南亞夜鷹，分割視窗、筆記與匯出。",
+          "台灣鳥類即時直播觀察平台，支援鳳頭蒼鷹、北方皇家信天翁與東方蜂鷹，分割視窗、筆記與匯出。",
       },
       { name: "theme-color", content: "#1a2e1a" },
       { property: "og:title", content: "鳥類直播觀察站" },
       {
         property: "og:description",
         content:
-          "台灣鳥類即時直播觀察平台，支援鳳頭蒼鷹與南亞夜鷹，分割視窗、筆記與匯出。",
+          "台灣鳥類即時直播觀察平台，支援鳳頭蒼鷹、北方皇家信天翁與東方蜂鷹，分割視窗、筆記與匯出。",
       },
       { property: "og:locale", content: "zh_TW" },
     ],
